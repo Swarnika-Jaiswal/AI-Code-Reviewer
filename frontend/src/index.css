@@ -1,0 +1,111 @@
+:root {
+  color-scheme: dark;
+
+  /* Core surfaces */
+  --bg: #0d1117;
+  --bg-elevated: #0f141b;
+  --card: #161b22;
+  --card-hover: #1c222b;
+  --border: rgba(240, 246, 252, 0.08);
+  --border-strong: rgba(240, 246, 252, 0.14);
+
+  /* Brand */
+  --primary: #7c3aed;
+  --primary-soft: rgba(124, 58, 237, 0.14);
+  --primary-strong: #8b5cf6;
+  --accent: #3b82f6;
+  --accent-soft: rgba(59, 130, 246, 0.14);
+  --gradient-brand: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%);
+
+  /* Text */
+  --text-primary: #e6edf3;
+  --text-secondary: #9ba7b4;
+  --text-muted: #6b7480;
+
+  /* Status */
+  --success: #3fb950;
+  --danger: #f85149;
+  --danger-soft: rgba(248, 81, 73, 0.12);
+  --warning: #d29922;
+
+  /* Shape & shadow */
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --shadow-soft: 0 8px 24px rgba(1, 4, 9, 0.35);
+  --shadow-lift: 0 16px 40px rgba(1, 4, 9, 0.45);
+
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+button,
+select,
+input,
+textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--primary-soft);
+  color: var(--text-primary);
+}
+
+/* Scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(240, 246, 252, 0.18) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(240, 246, 252, 0.14);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(240, 246, 252, 0.24);
+  background-clip: padding-box;
+}
